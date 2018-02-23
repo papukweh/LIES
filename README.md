@@ -1,2 +1,2 @@
-# LIES
-An Accusation Card Game
+## LIES:
+#An Accusation Card Game
