@@ -1,0 +1,33 @@
+12 -> Armas
+	>> Pistola 9mm
+	>> Colt .38
+	>> Assault Rifle
+	>> Faca
+	>> Adaga cerimonial
+	>> Bisturi
+	>> Veneno
+	>> Overdose
+	>> Gás
+	>> Bola de Cristal
+	>> Soco inglês
+	>> Taco de beisebol
+10 -> Locais {1 para cada personagem}
+	>> Tribunal
+	>> Delegacia
+	>> Embaixada
+	>> Cassino
+	>> Bar
+	>> Armazém abandonado
+	>> Consultório
+	>> Hospital
+	>> Museu
+	>> Templo
+24 -> Pistas { 12 comuns, 8 incomuns, 4 raras }
+	>> 
+4 -> Ferimentos { 1 de cada tipo}
+	>> Corte
+	>> Tiro
+	>> Químico
+	>> Impacto
+
+
