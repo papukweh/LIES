@@ -63,14 +63,14 @@ def monokuma(deck)
 	deck.each do |x|
 
 		if(x.tipo==1)
-			x, deck[49] = deck[49], x
+			x, deck[deck.length-1] = deck[deck.length-1], x
 			if(swapped%2.0!=0)
 				swapped *= 2
 			end
 		end
 
 		if(x.tipo==2)
-			x, deck[48] = deck[48], x
+			x, deck[deck.length-2] = deck[deck.length-2], x
 			if(swapped%3.0!=0)
 				swapped *= 3
 			end
@@ -83,15 +83,15 @@ def monokuma(deck)
 
 	#printdeck(deck)
 	#puts "++++++++++++++++++++++++++++++++++++++++++++++++"
-	#puts "Monokuma file: #{printcard(deck[48])}, #{printcard(deck[49])}"
+	#puts "Monokuma file: #{printcard(deck[deck.length-2])}, #{printcard(deck[deck.length-1])}"
 	#puts "++++++++++++++++++++++++++++++++++++++++++++++++"
-	return deck[48], deck[49]
+	return deck[deck.length-2], deck[deck.length-1]
 end
 
 def playround(nplayers, casos)
 	# build the players vector
 	players = []
-	chars   = Array.new(12,0)
+	chars   = Array.new(13,0)
 	12.times {|x| players << x+1;}
 
 	# ordem de mortes e classes nao otulizadas
@@ -103,7 +103,7 @@ def playround(nplayers, casos)
 	deck = createdeck()
 	monokuma = monokuma(deck)
 
-	monokuma[1].valor[1..3].each {|x| chars[x-1] += 1}
+	monokuma[1].valor[1..3].each {|x| chars[x] += 1}
 
 	players.each do |x|
 		armas = 0
@@ -118,9 +118,9 @@ def playround(nplayers, casos)
 				if y.tipo == 1
 					armas += 1
 					y.valor[1..3].each do |z|
-						chars[z-1] += 1
-						if players.include? z
-							if z!= x
+						if z !=x 
+							chars[z] += 1
+							if players.include? z
 								screwed+=1
 							end
 						end
@@ -147,12 +147,15 @@ def playround(nplayers, casos)
 				casos[2] +=1
 			end
 		end
+		#puts "this is player #{x}'s mao: "
+		#printdeck(mao)
 	end
 
 	12.times do |x|
 		if players.include? x
 			if(chars[x]==0)
 				casos[3] += 1
+				#puts "hell yeah player #{x} can't be accused!"
 			end
 		end
 	end
@@ -183,5 +186,4 @@ until jogadores == 1 do
 
 	jogadores -= 1;
 	casos = [0.0,0.0,0.0,0.0]
-
 end
