@@ -21,7 +21,7 @@ end
 def createdeck()
 	deck = []
 
-	32.times 	{ deck << Card.new(0,0) } # pistas irrelevantes (tipo 0)
+	32.times 	{ deck << Card.new(0,0) } # pistas/locais irrelevantes (tipo 0)
 	2.times		{ deck << Card.new(5,0) } # remove ferimentos (tipo 5)
 
 	# ferimentos (tipo 2)
@@ -31,22 +31,22 @@ def createdeck()
 	deck << Card.new(2,-4) # tiro
 
 	# armas (tipo 1) e seus subgrupos
-	deck << Card.new(1,[-1,1,2,3])
 	deck << Card.new(1,[-1,1,2,4])
+	deck << Card.new(1,[-1,1,2,7])
 
-	deck << Card.new(1,[-1,3,4,1])
-	deck << Card.new(1,[-2,3,4,2])
+	deck << Card.new(1,[-1,3,4,9])
+	deck << Card.new(1,[-2,3,4,12])
 
-	deck << Card.new(1,[-2,5,6,7])
-	deck << Card.new(1,[-2,5,6,8])
+	deck << Card.new(1,[-2,5,6,1])
+	deck << Card.new(1,[-2,5,6,5])
 
-	deck << Card.new(1,[-3,7,8,5])
-	deck << Card.new(1,[-3,7,8,6])
+	deck << Card.new(1,[-3,7,8,8])
+	deck << Card.new(1,[-3,7,8,2])
 
-	deck << Card.new(1,[-3,9,10,11])
-	deck << Card.new(1,[-4,9,10,12])
+	deck << Card.new(1,[-3,9,10,3])
+	deck << Card.new(1,[-4,9,10,11])
 
-	deck << Card.new(1,[-4,11,12,9])
+	deck << Card.new(1,[-4,11,12,6])
 	deck << Card.new(1,[-4,11,12,10])
 
 	# deck embaralhado, config inicial do jogo
@@ -101,18 +101,16 @@ def playround(nplayers, casos)
 
 	round = 1
 
-	until round == nplayers do
 		deck = createdeck()
-		deck.shuffle!
 		monokuma = monokuma(deck)
 
 		players.each do |x|
 			armas = 0
 			mao = []
 			if x == -1
-				2.times {  mao << deck[0]; deck = deck[1..49] }
+				2.times {  mao << deck[0]; deck = deck[1..-1] }
 			else
-				5.times { mao << deck[0]; deck = deck[1..49] }
+				5.times { mao << deck[0]; deck = deck[1..-1] }
 				screwed = 0
 				ferimentos = 0
 				mao.each do |y|
@@ -149,23 +147,29 @@ def playround(nplayers, casos)
 			end
 		end
 
-		# remove um jogador e incrementa o round
-		players[-round] = -1
-		round +=1
-	end
-
 	#puts "player #{players[0]} wins the game!"
 end
 
 
 # casos[0] = no armas
 # casos[1] = no armas uteis
-# jogadores[2] = no ferimentos
+# casos[2] = no ferimentos
 casos = [0.0,0.0,0.0]
-jogos = 10000
+jogadores = ARGV[0].to_i
+jogos = ARGV[1].to_i
 
-jogos.times { playround(4, casos) }
+until jogadores == 1 do
 
-puts "jogadores vivos sem armas: #{casos[0]} -> #{casos[0]/jogos} por jogo em média"
-puts "jogadores vivos sem armas uteis: #{casos[1]} -> #{casos[1]/jogos} por jogo em média"
-puts "jogadores vivos sem ferimentos: #{casos[2]} -> #{casos[2]/jogos} por jogo em média"
+	jogos.times { playround(jogadores, casos) }
+
+	puts ""
+	puts "Testando com #{jogadores} jogadores, #{jogos} jogos:"
+	puts "> jogadores vivos sem armas: #{casos[0]} -> #{casos[0]/jogos} por jogo em média"
+	puts "> jogadores vivos sem armas uteis: #{casos[1]} -> #{casos[1]/jogos} por jogo em média"
+	puts "> jogadores vivos sem ferimentos: #{casos[2]} -> #{casos[2]/jogos} por jogo em média"
+	puts ""
+
+	jogadores -= 1;
+	casos = [0.0,0.0,0.0]
+
+end
