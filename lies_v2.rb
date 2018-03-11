@@ -31,22 +31,22 @@ def createdeck()
 	deck << Card.new(2,-4) # tiro
 
 	# armas (tipo 1) e seus subgrupos
+	deck << Card.new(1,[-1,1,2,3])
 	deck << Card.new(1,[-1,1,2,4])
-	deck << Card.new(1,[-1,1,2,7])
 
-	deck << Card.new(1,[-1,3,4,9])
-	deck << Card.new(1,[-2,3,4,12])
+	deck << Card.new(1,[-1,3,4,1])
+	deck << Card.new(1,[-2,3,4,2])
 
-	deck << Card.new(1,[-2,5,6,1])
-	deck << Card.new(1,[-2,5,6,5])
+	deck << Card.new(1,[-2,5,6,7])
+	deck << Card.new(1,[-2,5,6,8])
 
-	deck << Card.new(1,[-3,7,8,8])
-	deck << Card.new(1,[-3,7,8,2])
+	deck << Card.new(1,[-3,7,8,5])
+	deck << Card.new(1,[-3,7,8,6])
 
-	deck << Card.new(1,[-3,9,10,3])
-	deck << Card.new(1,[-4,9,10,11])
+	deck << Card.new(1,[-3,9,10,11])
+	deck << Card.new(1,[-4,9,10,12])
 
-	deck << Card.new(1,[-4,11,12,6])
+	deck << Card.new(1,[-4,11,12,9])
 	deck << Card.new(1,[-4,11,12,10])
 
 	# deck embaralhado, config inicial do jogo
@@ -91,7 +91,8 @@ end
 def playround(nplayers, casos)
 	# build the players vector
 	players = []
-	12.times {|x| players << x+1}
+	chars   = Array.new(12,0)
+	12.times {|x| players << x+1;}
 
 	# ordem de mortes e classes nao otulizadas
 	players.shuffle!
@@ -99,53 +100,62 @@ def playround(nplayers, casos)
 		players = players[0...-1]
 	end
 
-	round = 1
+	deck = createdeck()
+	monokuma = monokuma(deck)
 
-		deck = createdeck()
-		monokuma = monokuma(deck)
+	monokuma[1].valor[1..3].each {|x| chars[x-1] += 1}
 
-		players.each do |x|
-			armas = 0
-			mao = []
-			if x == -1
-				2.times {  mao << deck[0]; deck = deck[1..-1] }
-			else
-				5.times { mao << deck[0]; deck = deck[1..-1] }
-				screwed = 0
-				ferimentos = 0
-				mao.each do |y|
-					if y.tipo == 1
-						armas += 1
-						y.valor[1..3].each do |z|
-							if players.include? z
-								if z!= x
-									screwed+=1
-								end
+	players.each do |x|
+		armas = 0
+		mao = []
+		if x == -1
+			2.times {  mao << deck[0]; deck = deck[1..-1] }
+		else
+			5.times { mao << deck[0]; deck = deck[1..-1] }
+			screwed = 0
+			ferimentos = 0
+			mao.each do |y|
+				if y.tipo == 1
+					armas += 1
+					y.valor[1..3].each do |z|
+						chars[z-1] += 1
+						if players.include? z
+							if z!= x
+								screwed+=1
 							end
 						end
-					elsif y.tipo == 2
-						ferimentos += 1
 					end
-				end
-
-				# nenhuma arma util
-				if screwed == 0
-					if armas == 0
-						#puts "oh no, player #{x} has no weapons cards on round #{round}"
-						casos[0] += 1
-					else
-						#puts "oh no, player #{x} has no useful weapon cards on round #{round}"
-						casos[1] += 1
-					end
-					#printdeck(mao)
-				end
-
-				#nenhum ferimento
-				if ferimentos == 0
-					casos[2] +=1
+				elsif y.tipo == 2
+					ferimentos += 1
 				end
 			end
+
+			# nenhuma arma util
+			if screwed == 0
+				if armas == 0
+					#puts "oh no, player #{x} has no weapons cards on round #{round}"
+					casos[0] += 1
+				else
+					#puts "oh no, player #{x} has no useful weapon cards on round #{round}"
+					casos[1] += 1
+				end
+				#printdeck(mao)
+			end
+
+			#nenhum ferimento
+			if ferimentos == 0
+				casos[2] +=1
+			end
 		end
+	end
+
+	12.times do |x|
+		if players.include? x
+			if(chars[x]==0)
+				casos[3] += 1
+			end
+		end
+	end
 
 	#puts "player #{players[0]} wins the game!"
 end
@@ -154,7 +164,8 @@ end
 # casos[0] = no armas
 # casos[1] = no armas uteis
 # casos[2] = no ferimentos
-casos = [0.0,0.0,0.0]
+# casos[3] = numero de não acusados
+casos = [0.0,0.0,0.0,0.0]
 jogadores = ARGV[0].to_i
 jogos = ARGV[1].to_i
 
@@ -167,9 +178,10 @@ until jogadores == 1 do
 	puts "> jogadores vivos sem armas: #{casos[0]} -> #{casos[0]/jogos} por jogo em média"
 	puts "> jogadores vivos sem armas uteis: #{casos[1]} -> #{casos[1]/jogos} por jogo em média"
 	puts "> jogadores vivos sem ferimentos: #{casos[2]} -> #{casos[2]/jogos} por jogo em média"
+	puts "> jogadores vivos que não tinham armas em jogo: #{casos[3]} -> #{casos[3]/jogos} por jogo em média"
 	puts ""
 
 	jogadores -= 1;
-	casos = [0.0,0.0,0.0]
+	casos = [0.0,0.0,0.0,0.0]
 
 end
