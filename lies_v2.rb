@@ -55,6 +55,39 @@ def createdeck()
 	return deck
 end
 
+def createdeckr()
+	deck = []
+
+	32.times 	{ deck << Card.new(0,0) } # pistas/locais irrelevantes (tipo 0)
+	2.times		{ deck << Card.new(5,0) } # remove ferimentos (tipo 5)
+
+	# ferimentos (tipo 2)
+	deck << Card.new(2,-1) # corte
+	deck << Card.new(2,-2) # impacto
+	deck << Card.new(2,-3) # quimico
+	deck << Card.new(2,-4) # tiro
+
+	# armas (tipo 1) e seus subgrupos
+
+	players = (1..12).to_a
+
+	puts "Armas geradas aleatoriamente:"
+	3.times do
+
+		players.shuffle!
+
+		for i in [0,3,6,9]
+			deck << Card.new(1,players[i..(i+2)].push(-1).reverse)
+			puts printcard(deck[-1])
+		end
+
+	end
+
+	# deck embaralhado, config inicial do jogo
+	#printdeck(deck)
+	return deck
+end
+
 def monokuma(deck)
 	swapped = 1
 
@@ -88,7 +121,7 @@ def monokuma(deck)
 	return deck[deck.length-2], deck[deck.length-1]
 end
 
-def playround(nplayers, casos)
+def playround(nplayers, casos, decko)
 	# build the players vector
 	players = []
 	chars   = Array.new(13,0)
@@ -100,7 +133,9 @@ def playround(nplayers, casos)
 		players = players[0...-1]
 	end
 
-	deck = createdeck()
+	deck = decko.clone
+	deck.shuffle!
+
 	monokuma = monokuma(deck)
 
 	monokuma[1].valor[1..3].each {|x| chars[x] += 1}
@@ -109,9 +144,9 @@ def playround(nplayers, casos)
 		armas = 0
 		mao = []
 		if x == -1
-			2.times {  mao << deck[0]; deck = deck[1..-1] }
+			2.times {  mao << deck.pop }
 		else
-			5.times { mao << deck[0]; deck = deck[1..-1] }
+			5.times { mao << deck.pop }
 			screwed = 0
 			ferimentos = 0
 			mao.each do |y|
@@ -172,17 +207,22 @@ casos = [0.0,0.0,0.0,0.0]
 jogadores = ARGV[0].to_i
 jogos = ARGV[1].to_i
 
+puts ""
+deck = createdeckr
+
 until jogadores == 1 do
 
-	jogos.times { playround(jogadores, casos) }
+	jogos.times { playround(jogadores, casos, deck) }
 
 	puts ""
 	puts "Testando com #{jogadores} jogadores, #{jogos} jogos:"
 	puts "> jogadores vivos sem armas: #{casos[0]} -> #{casos[0]/jogos} por jogo em média"
 	puts "> jogadores vivos sem armas uteis: #{casos[1]} -> #{casos[1]/jogos} por jogo em média"
 	puts "> jogadores vivos sem ferimentos: #{casos[2]} -> #{casos[2]/jogos} por jogo em média"
-	puts "> jogadores vivos que não tinham armas em jogo: #{casos[3]} -> #{casos[3]/jogos} por jogo em média"
+	puts "> jogadores vivos que não acusaveis: #{casos[3]} -> #{casos[3]/jogos} por jogo em média"
 	puts ""
+
+	#printdeck(deck)
 
 	jogadores -= 1;
 	casos = [0.0,0.0,0.0,0.0]
