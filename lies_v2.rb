@@ -96,14 +96,14 @@ def monokuma(deck)
 	deck.each do |x|
 
 		if(x.tipo==1)
-			x, deck[deck.length-1] = deck[deck.length-1], x
+			x, deck[-1] = deck[-1], x
 			if(swapped%2.0!=0)
 				swapped *= 2
 			end
 		end
 
 		if(x.tipo==2)
-			x, deck[deck.length-2] = deck[deck.length-2], x
+			x, deck[-2] = deck[-2], x
 			if(swapped%3.0!=0)
 				swapped *= 3
 			end
@@ -121,16 +121,19 @@ def monokuma(deck)
 	return deck[deck.length-2], deck[deck.length-1]
 end
 
-def playround(nplayers, casos, decko)
+def playround(splayers, nplayers, casos, decko)
 	# build the players vector
 	players = []
 	chars   = Array.new(13,0)
 	12.times {|x| players << x+1;}
+	players.shuffle!
 
 	# ordem de mortes e classes nao otulizadas
-	players.shuffle!
-	until players.length == nplayers do 
-		players = players[0...-1]
+
+	i = 0
+	until players.length == splayers do players.pop end	#corta o numero de jogadores até o numero inicial
+	until players.length+i == nplayers					#transforma o resto em testemunhas
+		players[i -= 1] = -1
 	end
 
 	deck = decko.clone
@@ -145,6 +148,11 @@ def playround(nplayers, casos, decko)
 		mao = []
 		if x == -1
 			2.times {  mao << deck.pop }
+			mao.each do |y|
+				if y.tipo == 1
+					y.valor[1..3].each {|x| chars[x] += 1}
+				end
+			end
 		else
 			5.times { mao << deck.pop }
 			screwed = 0
@@ -204,18 +212,19 @@ end
 # casos[2] = no ferimentos
 # casos[3] = numero de não acusados
 casos = [0.0,0.0,0.0,0.0]
-jogadores = ARGV[0].to_i
+splayers = ARGV[0].to_i
+nplayers = splayers
 jogos = ARGV[1].to_i
 
 puts ""
 deck = createdeckr
 
-until jogadores == 1 do
+until nplayers == 1 do
 
-	jogos.times { playround(jogadores, casos, deck) }
+	jogos.times { playround(splayers, nplayers, casos, deck) }
 
 	puts ""
-	puts "Testando com #{jogadores} jogadores, #{jogos} jogos:"
+	puts "Testando com #{nplayers} jogadores, #{jogos} jogos:"
 	puts "> jogadores vivos sem armas: #{casos[0]} -> #{casos[0]/jogos} por jogo em média"
 	puts "> jogadores vivos sem armas uteis: #{casos[1]} -> #{casos[1]/jogos} por jogo em média"
 	puts "> jogadores vivos sem ferimentos: #{casos[2]} -> #{casos[2]/jogos} por jogo em média"
@@ -224,6 +233,6 @@ until jogadores == 1 do
 
 	#printdeck(deck)
 
-	jogadores -= 1;
+	nplayers -= 1;
 	casos = [0.0,0.0,0.0,0.0]
 end
