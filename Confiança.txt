@@ -1,0 +1,21 @@
+Confiança
+
+>O que é?
+Confiança é o valor que representa a inocencia de um determinado jogador. o valor
+inicial de confiança de cada jogador é 7, que decai conforme o jogador é acusado.
+Caso chegue a 0 ou menos, o jogador não poderá acusar mais ninguém enquanto não
+conseguir recuperar sua confiança.
+
+>Como perder influencia?
+Os jogadores perdem influencia ao serem acusados. Cada argumento forte dito durante
+uma acusação faz com que o jogador perca 2 pontos de confiança, enquanto um argumento
+fraco o faz perder 1 ponto.
+
+>Como recuperar influencia?
+Os jogadores recuperam influencia ao criar argumentos que geram circunstancias
+contrarias a acusação do personagem.
+
+>Como evitar a perda de influencia?
+É possivel, depois de ser acusado, usar suas cartas com o intuito de reduzir a
+força de algum argumento de forte para fraco, assim reduzindo o valor de confiança
+perdido.
