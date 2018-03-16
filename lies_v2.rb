@@ -147,14 +147,14 @@ def playround(splayers, nplayers, casos, decko)
 		armas = 0
 		mao = []
 		if x == -1
-			2.times {  mao << deck.pop }
+			2.times {  mao << deck.shift }
 			mao.each do |y|
 				if y.tipo == 1
 					y.valor[1..3].each {|x| chars[x] += 1}
 				end
 			end
 		else
-			5.times { mao << deck.pop }
+			5.times { mao << deck.shift }
 			screwed = 0
 			ferimentos = 0
 			mao.each do |y|
