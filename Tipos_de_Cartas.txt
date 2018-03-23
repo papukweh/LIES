@@ -1,12 +1,12 @@
 As cartas usadas pelos jogadores são classificadas em 4 categorias: ferimentos, armas, locais e pistas.
 
-> Ferimentos: Indicam que tipo de dano a vitima sofreu antes de morrer. Existem 4 tipos de dano: corte, impacto, tiro e quimico ( venenos, etc).
+> Ferimentos: Indicam que tipo de dano a vítima sofreu antes de morrer. Existem 4 tipos de dano: corte, impacto, tiro e químico ( venenos, etc).
 
-> Armas: Possuem um tipo de dano e personagens que podem a usar.
+> Armas: Possuem um tipo de dano e personagens que a podem usar.
 
 > Locais: Lugares ao redor da cidade, relacionados a personagens.
 
-> Pistas: Um pouco mais complicadas, pistas são as cartas mais importantes para o storybuilding do jogo. Elas providenciam motivos, alteram outras cartas, movem o corpo, e similares. Em sumo, elas transformam argumentos fracos em fortes.
+> Pistas: Um pouco mais complicadas, pistas são as cartas mais importantes para o storybuilding do jogo. Elas providenciam motivos, alteram outras cartas, movem o corpo, entre outros efeitos. Em sumo, elas transformam argumentos fracos em fortes.
 
 Sabendo disso, a relação entre elas pode ser considerada a seguinte:
 
@@ -20,15 +20,15 @@ Sabendo disso, a relação entre elas pode ser considerada a seguinte:
 
 Algumas notas importantes:
 
-> Um corpo pode ter até 3 ferimentos ao mesmo tempo. Somente alguns personagens e pistas podem remover esses ferimentos.
+> Um corpo pode ter até 2 ferimentos ao mesmo tempo. Somente alguns personagens e pistas podem remover esses ferimentos.
 
-> As armas fazem uma relação entre tipo de dano e personagem, mas não são unicas. Por exemplo, uma pistola 9mm e uma colt .38 ambas são armas de fogo, com dano tipo tiro. Porém, elas apontam para personagens diferente ( digamos, a 9mm é uma arma de policias e detetives, enquanto a .38 de criminosos e contrabandistas ).
+> As armas fazem uma relação entre tipo de dano e personagem, mas não são unicas. Por exemplo, uma pistola 9mm e uma colt .38 ambas são armas de fogo, com dano tipo "tiro". Porém, elas apontam para personagens diferentes ( digamos, a 9mm é uma arma de policiais e detetives, enquanto a .38 de criminosos e contrabandistas ).
 
-> Cada arma possue 3 personagens que a usam.
+> Cada arma possui 3 personagens que a usam.
 
-> Locais são lugares frequentados pelos personagens. Enquanto que dizer que um personagem é culpado pelo corpo estar em um local o qual ele frequenta é considerado um argumento fraco, ele pode ser fortificado ao se colocar armas no local ( representando que ela foi encontrada lá ) e ao se usar pistas ( como testemunhas que disseram que o personagem estava no local ).
+> Locais são lugares frequentados pelos personagens. Enquanto dizer que um personagem é culpado pelo corpo estar em um local que ele frequenta é considerado um argumento fraco, ele pode ser fortificado ao se colocar armas no local ( representando que ela foi encontrada lá ) e ao se usar pistas ( como testemunhas que disseram que o personagem estava no local ).
 
-> Um local possue até 3 personagens que o frequenta. Além disso, locais são colocados na mesa um ao lado ( ou a frente, ou atrás ) de outro, criando assim um mapa da cidade.
+> Um local possui até 3 personagens que o frequentam. Além disso, locais são colocados na mesa um adjacente a outro, criando assim um mapa da cidade.
 
 
 
