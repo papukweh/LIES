@@ -15,13 +15,15 @@
 	>> Tribunal
 	>> Delegacia
 	>> Embaixada
-	>> Cassino
+	>> Ministério
 	>> Bar
 	>> Armazém abandonado
 	>> Consultório
 	>> Hospital
 	>> Museu
 	>> Templo
+	>> Cassino
+	>> Estádio
 24 -> Pistas { 12 comuns, 9 incomuns, 3 raras }
 	>> 6 Pistas comuns de Motivo
 	>> 6 Pistas comuns de Rastro
