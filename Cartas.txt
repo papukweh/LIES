@@ -1,16 +1,16 @@
 12 -> Armas
 	>> Pistola 9mm
 	>> Colt .38
-	>> Assault Rifle
+	>> Dardo
 	>> Faca
+	>> Canivete
 	>> Adaga cerimonial
-	>> Bisturi
 	>> Veneno
 	>> Overdose
 	>> Gás
 	>> Bola de Cristal
 	>> Soco inglês
-	>> Taco de beisebol
+	>> Bastão de Madeira
 10 -> Locais {1 para cada personagem}
 	>> Tribunal
 	>> Delegacia
@@ -22,8 +22,15 @@
 	>> Hospital
 	>> Museu
 	>> Templo
-24 -> Pistas { 12 comuns, 8 incomuns, 4 raras }
-	>> 
+24 -> Pistas { 12 comuns, 9 incomuns, 3 raras }
+	>> 6 Pistas comuns de Motivo
+	>> 6 Pistas comuns de Rastro
+	>> 3 Pistas incomuns de Testemunha Ocular
+	>> 3 Pistas incomuns de Posse de Arma
+	>> 3 Pistas incomuns de Histórico Criminal
+	>> 1 Pista rara "Mover o corpo"
+	>> 1 Pista rara ""
+	>> 1 Pista rara ""
 4 -> Ferimentos { 1 de cada tipo}
 	>> Corte
 	>> Tiro
