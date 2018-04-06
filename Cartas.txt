@@ -11,7 +11,7 @@
 	>> Bola de Cristal
 	>> Soco inglês
 	>> Bastão de Madeira
-10 -> Locais {1 para cada personagem}
+12 -> Locais {1 para cada personagem}
 	>> Tribunal
 	>> Delegacia
 	>> Embaixada
