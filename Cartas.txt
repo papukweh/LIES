@@ -29,8 +29,8 @@
 	>> 3 Pistas incomuns de Posse de Arma
 	>> 3 Pistas incomuns de Histórico Criminal
 	>> 1 Pista rara "Mover o corpo"
-	>> 1 Pista rara ""
-	>> 1 Pista rara ""
+	>> 1 Pista rara "Ferimentos Pós-Morte"
+	>> 1 Pista rara "Hora da Morte"
 4 -> Ferimentos { 1 de cada tipo}
 	>> Corte
 	>> Tiro
