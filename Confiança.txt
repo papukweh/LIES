@@ -2,9 +2,9 @@ Confiança
 
 >O que é?
 Confiança é o valor que representa a inocência de um determinado jogador. O valor
-inicial de confiança de cada jogador é 7, que decai conforme o ele é acusado.
-Caso chegue a 0 ou menos, o jogador não poderá acusar mais ninguém enquanto não
-conseguir recuperar sua confiança.
+inicial de confiança de cada jogador é 7, que decai conforme ele é acusado.
+Caso chegue a 0 ou menos, o jogador não poderá acusar mais ninguém e, consequentemente,
+perderá o jogo.
 
 >Como perder confiança?
 Os jogadores perdem confiança ao serem acusados. Cada argumento forte dito durante
@@ -12,10 +12,10 @@ uma acusação faz com que o jogador perca 2 pontos de confiança, enquanto um a
 fraco o faz perder 1 ponto.
 
 >Como recuperar confiança?
-Os jogadores recuperam confiança ao criar argumentos que geram circunstâncias
-contrárias a acusação do personagem.
+Não é possível recuperar confiança na atual versão de jogo.
 
 >Como evitar a perda de confiança?
-É possível, depois de ser acusado, usar suas cartas com o intuito de reduzir a
-força de algum argumento de forte para fraco, assim reduzindo o valor de confiança
-perdido.
+É possível, depois de ser acusado, usar suas cartas para anular o argumento feito, atraveś
+de uma firula, evitando assim a perda de confiança. É importante ressaltar, porém, que 
+essas cartas não poderão ser usadas para tirar confiança do oponente, apenas para bloquear 
+seu argumento e se defender.

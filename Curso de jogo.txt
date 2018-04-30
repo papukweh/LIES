@@ -2,9 +2,9 @@ Preparação:
 
 1) Embaralhar e distribuir as cartas de personagem até que um jogador receba a carta de Mediador. O jogador que recebeu essa carta se torna o Mediador da primeira rodada.
 
-2) Reembaralhe as cartas de personagem e dê uma para cada jogador. Alternativamente, deixe que os jogadores escolham o proprio personagem, começando pelo Mediador e continuando em sentido horario.
+2) Reembaralhe as cartas de personagem e dê uma para cada jogador. Alternativamente, deixe que os jogadores escolham o próprio personagem, começando pelo Mediador e continuando em sentido horário.
 
-3) Deixe as cartas de personagem restantes de lado e embaralhe as cartas restantes.
+3) Deixe as cartas de personagem restantes de lado e embaralhe as cartas restantes  (DECKBUILDING)
 
 Jogo:
 
@@ -18,10 +18,10 @@ Jogo:
 
 4.1) O jogador acusado se defende, usando as cartas de sua mão para acusar algum jogador com exceção de testemunhas. Volte para ( 4 ).
 
-4.2) ( Caso o jogador não consiga se defender ) Algum outro jogador defende o acusado, usando suas proprias cartas para acusar algum outro jogador com exceção de testemunhas. Volte para ( 4 ).
+4.2) ( Caso o jogador não consiga se defender ) Algum outro jogador defende o acusado, usando suas próprias cartas para acusar algum outro jogador com exceção de testemunhas. Volte para ( 4 ).
 
 4.3) ( Caso o jogador não consiga se defender e ninguém o defenda ) O jogador acusado é condenado.
 
-5) O jogador condenado se torna uma testemunha, e o jogador que o acusou se torna o Mediador da proxima rodada.
+5) O jogador condenado se torna uma testemunha, e o jogador que o acusou se torna o Mediador da próxima rodada.
 
 6) As pistas são recolhidas e embaralhadas. Uma nova rodada começa.

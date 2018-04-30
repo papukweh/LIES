@@ -26,9 +26,9 @@
 	>> Estádio
 24 -> Pistas { 12 comuns, 9 incomuns, 3 raras }
 	>> 6 Pistas comuns de Motivo
-	>> 6 Pistas comuns de Rastro
-	>> 3 Pistas incomuns de Testemunha Ocular
-	>> 3 Pistas incomuns de Posse de Arma
+	>> 6 Pistas comuns de Evidência Material
+	>> 3 Pistas incomuns de Indício de presença
+	>> 3 Pistas incomuns de Registro de posse
 	>> 3 Pistas incomuns de Histórico Criminal
 	>> 1 Pista rara "Mover o corpo"
 	>> 1 Pista rara "Ferimentos Pós-Morte"

@@ -28,7 +28,7 @@ Algumas notas importantes:
 
 > Locais são lugares frequentados pelos personagens. Enquanto dizer que um personagem é culpado pelo corpo estar em um local que ele frequenta é considerado um argumento fraco, ele pode ser fortificado ao se colocar armas no local ( representando que ela foi encontrada lá ) e ao se usar pistas ( como testemunhas que disseram que o personagem estava no local ).
 
-> Um local possui até 3 personagens que o frequentam. Além disso, locais são colocados na mesa um adjacente a outro, criando assim um mapa da cidade.
+> Um local possui 1 personagem que o frequena. Além disso, locais são colocados na mesa um adjacente a outro, criando assim um mapa da cidade.
 
 
 
