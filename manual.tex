@@ -14,7 +14,25 @@
 
 \section*{INTRODUÇÃO}
 
-%sobre o jogo e contents?
+%sobre o jogo, pegar parte do readme.md do git
+
+\section*{CONTEÚDO}
+
+	\begin{itemize}
+
+	\item 12 cartas de Personagem
+
+	\item 12 cartas de Arma
+
+	\item 12 cartas de Local
+
+	\item 24 cartas de Pista
+
+	\item 4 cartas de Ferimento
+
+	\item 8 marcadores de Confiança
+
+	\end{itemize}
 
 \section*{INSTRUÇÕES}
 
@@ -25,31 +43,67 @@
 
 \subsection*{PREPARO}
 
-Primeiro, é necessário construir o baralho de jogo em função do número de jogadores/as. Para isso, separe as cartas que não são de personagem em 4 pilhas, de acordo com as categorias de cartas - lugar, arma, pista e ferimento. 
+	Primeiro, é necessário construir o baralho de jogo em função do número de jogadores/as. Para isso, separe as cartas que não são de personagem em 4 pilhas, de acordo com as categorias de cartas - lugar, arma, pista e ferimento. 
 
-Distribua uma carta de personagem para cada jogador/a. Cada uma delas possui o nome do/a personagem, o lugar onde ele/a geralmente é encontrado e as armas que ele/a geralmente usa. Remova das pilhas de lugar e arma quaisquer cartas que não estejam nas cartas de personagem sorteadas.
+	Distribua uma carta de personagem para cada jogador/a. Cada uma delas possui o nome do/a personagem, o lugar onde ele/a geralmente é encontrado e as armas que ele/a geralmente usa. Remova das pilhas de lugar e arma quaisquer cartas que não estejam nas cartas de personagem sorteadas.
 
 %colocar um balaozinho de exemplo ou algo do tipo?
 
-Em seguida, retire aleatoriamente uma carta de lugar, uma de arma e uma de ferimento dos respectivos montes e coloque as na mesa. Retire também uma carta de personagem dentre as que sobraram. Coloque a carta de lugar no centro da mesa, com as cartas de arma e personagem parcialmente sobre ela (indicando que a vítima foi encontrada nesse lugar junto dessa arma) e a carta de ferimento cobrindo parcialmente a de personagem (indicando que o/a personagem foi encontrado com este ferimento).
+	Em seguida, retire aleatoriamente uma carta de lugar, uma de arma e uma de ferimento dos respectivos montes e coloque as na mesa. Retire também uma carta de personagem dentre as que sobraram. Coloque a carta de lugar no centro da mesa, com as cartas de arma e personagem parcialmente sobre ela (indicando que a vítima foi encontrada nesse lugar junto dessa arma) e a carta de ferimento cobrindo parcialmente a de personagem (indicando que o/a personagem foi encontrado com este ferimento).
 
-De acordo com o número de jogadores/as, construa o baralho de jogo da seguinte forma:
+	De acordo com o número de jogadores/as, construa o baralho de jogo da seguinte forma:
 
 %fazer uma tabela fofinha aqui, se é que isso vai continuar assim
 
-3 jogadores - 
+	3 jogadores - 
 
-4 jogadores - 
+	4 jogadores - 
 
-5 jogadores - 
+	5 jogadores - 
 
-6 jogadores - 
+	6 jogadores - 
 
-7 jogadores  - 
+	7 jogadores  - 
 
-8 jogadores - 
+	8 jogadores - 
 
-Finalmente, distribua aleatoriamente 5 cartas do baralho de jogo para cada jogador/a. Cada jogador/a coloca sua carta de personagem à sua frente e o jogo está pronto para começar.
+	Finalmente, distribua aleatoriamente 5 cartas do baralho de jogo para cada jogador/a. Cada jogador/a coloca sua carta de personagem à sua frente e coloca seu marcador de confiança em 7. O jogo está pronto para começar.
 
+\subsection*{CURSO DE JOGO}
+
+	Uma partida de LIES é composta por rodadas e cada rodada é composta por turnos. O objetivo de cada rodada é incriminar um jogador, que será então eliminado e participará na próxima jogada apenas como uma testemunha (indicado por virar sua carta de personagem ao contrário). Esse processo se repete até que sobrem apenas 3 jogadores/as. Nessa rodada, o/a jogador/a que fizer o argumento final para incriminar seu oponente será declarado vencedor.
+
+	Dentro de cada rodada, os turnos prosseguem da seguinte maneira:
+
+	\begin{itemize}
+		\item Caso seja a primeira rodada, é escolhido um/a jogador/a aleatoriamente para fazer a primeira acusação. Este/a jogador/a será chamado/a de jogador/a ativo/a até o fim do turno.
+
+		\item Caso contrário, o/a jogador/a que fez o argumento final para incriminar um oponente na jogada anterior fará a primeira acusação. O mesmo vale sobre a nomenclatura de jogador/a ativo/a.
+	\end{itemize}
+
+	\begin{enumerate}
+		\item O/a jogador/a ativo/a faz sua acusação, usando quantas cartas desejar e podendo relacioná-las com cartas já jogadas. A acusação deve ser composta apenas por um argumento.
+
+		\item Os/as outros/as jogadores/as (incluindo o/a) podem responder as acusações com suas cartas das seguintes formas:
+			\begin{itemize}
+				\item Firula: usar suas cartas para contrariar a acusação, de modo que ela se torne nula.
+
+				\item Lorota: usar suas cartas para apoiar a acusação, de modo que ela se torne mais forte.
+			\end{itemize}
+
+		\item As cartas são empilhadas na ordem que foram jogadas. Elas vão sendo desempilhadas conforme os/as jogadores/as analizam quais acusações, lorotas e firulas acabaram sendo válidas. Estas últimas são colocadas ou em campo ou no jogador acusado.
+
+		\item O/a jogador/a acusado/a perde confiança de acordo com a força do argumento.
+
+		\item O turno acaba. Todos/as os/as jogadores/as que jogaram cartas nesse turno compram uma carta. O/a jogador/a ativo/a do próximo turno é:
+			 \begin{itemize}
+				\item Aquele/a que foi acusado/a neste turno.
+
+				\item O/a jogador/a que conseguiu "Firular" a acusação.
+
+				\item O/a jogador que mais fortaleceu a acusação "Loroteando".
+			\end{itemize}
+
+	\end{enumerate}
 
 \end{document}
