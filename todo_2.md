@@ -1,6 +1,7 @@
 cartas de lugar sao chatas > comodos
 	como distribuir lugares?
 cartas de arma sao repetititvas > trocar por traits
+pessoas serem as pessoas que trabalham na casa
 evidencia > carta que poe traits nas cousas
 turnos são estranhos >
 final do jogo é estranho >
@@ -63,7 +64,7 @@ Adaga cerimonial
 	Honroso
 Veneno
 	Sutil
-	
+
 Overdose
 Gás
 Bola de Cristal
