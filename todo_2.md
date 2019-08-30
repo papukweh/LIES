@@ -1,10 +1,12 @@
 cartas de lugar sao chatas > comodos
+	como distribuir lugares?
 cartas de arma sao repetititvas > trocar por traits
+evidencia > carta que poe traits nas cousas
 turnos são estranhos >
 final do jogo é estranho >
 quem morre é o dono da mansao e cada pessoa fala uma coisa sobre ele
 
-**Pessoas**
+## Pessoas
 
 Detetive
 Policial
@@ -15,24 +17,55 @@ Médico
 Vidente
 Apostador
 
-**Traits**
+## Traits
 
 Bruto
 Sutil
-Atirador
-Glamouroso
+Preciso
+Galante
 Compulsivo
 Jogador
-Destro
-Distraido
-Focado
+Supersticioso
+Ganancioso
+Honroso
+Boemio
+Petulante
 
-**Comodos**
+## Comodos
 
 Hall
 Sala de Estar
+Quarto
 Cassino
 Piscina
 Cozinha
 Jardim
 Sala de Troféus
+Auditório
+Adega
+
+## Armas
+
+Pistola 
+	Preciso
+	Bruto
+Dardo
+	Preciso
+	Sutil
+Faca
+	Honroso
+	Bruto
+Canivete
+	Sutil
+	Bruto
+Adaga cerimonial
+	Supersticioso
+	Honroso
+Veneno
+	Sutil
+	
+Overdose
+Gás
+Bola de Cristal
+Soco inglês
+Bastão de Madeira
