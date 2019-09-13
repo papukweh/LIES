@@ -1,22 +1,25 @@
 cartas de lugar sao chatas > comodos
 	como distribuir lugares?
-cartas de arma sao repetititvas > trocar por traits
+cartas de arma sao repetititvas > trocar por traits, que sao cartas
 pessoas serem as pessoas que trabalham na casa
 evidencia > carta que poe traits nas cousas
 turnos são estranhos >
 final do jogo é estranho >
-quem morre é o dono da mansao e cada pessoa fala uma coisa sobre ele
+quem morre é o dono MAFIOSO da mansao e cada pessoa fala uma coisa sobre ele
+regra da carta que nao aponta pra ninguem
 
 ## Pessoas
 
-Detetive
+Detetive?
+
 Policial
-Espião
-Ladrão
+Alfaiate
+Cozinheiro
+Faxineiro
 Contrabandista
-Médico
+Enfermeiro
 Vidente
-Apostador
+Investidor
 
 ## Traits
 
@@ -49,7 +52,7 @@ Adega
 
 Pistola 
 	Preciso
-	Bruto
+	
 Dardo
 	Preciso
 	Sutil
@@ -64,9 +67,18 @@ Adaga cerimonial
 	Honroso
 Veneno
 	Sutil
-
-Overdose
-Gás
+	Supersticioso
+Analgésico
+	Sutil
+	Compulsivo
+jef
+	bla
+	bla
 Bola de Cristal
+	Bruto
+	Supersticioso
 Soco inglês
-Bastão de Madeira
+	Bruto
+	Honroso
+Bastão
+	Bruto
