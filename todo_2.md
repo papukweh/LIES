@@ -11,76 +11,61 @@ passagem secreta
 Ideia do matheus > lorota ganha bonus
 
 ## Pessoas
+	Detetive?
 
-Detetive?
-
-Policial
-Alfaiate
-Cozinheiro
-Faxineiro
-Contrabandista
-Enfermeiro
-Vidente
-Investidor
+	Policial
+	Alfaiate
+	Cozinheiro
+	Faxineiro
+	Contrabandista
+	Enfermeiro
+	Vidente
+	Investidor
 
 ## Traits
-
-Bruto
-Sutil
-Preciso
-Galante
-Compulsivo
-Jogador
-Supersticioso A
-Ganancioso A
-Honroso
-Boemio
-Petulante
+	Bruto - sangue
+	Sutil - contramedidas, furtividade
+    Preciso - tiros, lançamentos, precisão
+	Galante - perfume, tecidos chiques, lenço
+	Desastrado - barulhos, coisas quebradas
+	Sagaz - minucia, detalhes, medicina
+	Supersticioso - runas, desenhos, bonecos
+	Ganancioso - aneis, dinheiro, coisas caras 
+	Honroso - luta
+	Hedonista - sexo, drogas, comida
+	Petulante - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ## Comodos
-
-Hall
-Sala de Estar
-Quarto
-Cassino
-Piscina
-Cozinha
-Jardim
-Sala de Troféus
-Auditório
-Adega
+	Hall
+	Sala de Estar
+	Quarto
+	Cassino
+	Piscina
+	Cozinha
+	Jardim
+	Sala de Troféus
+	Auditório
+	Adega
 
 ## Armas
+	Pistola 
+	Dardo
+	Faca
+	Canivete
+	Adaga cerimonial
+	Veneno
+	Analgésico
+	Candelabro
+	Bola de Cristal
+	Soco inglês
+	Bastão
 
-Pistola 
-	Preciso
-	
-Dardo
-	Preciso
-	Sutil
-Faca
-	Honroso
-	Bruto
-Canivete
-	Sutil
-	Bruto
-Adaga cerimonial
-	Supersticioso
-	Honroso
-Veneno
-	Sutil
-	Supersticioso
-Analgésico
-	Sutil
-	Compulsivo
-jef
-	bla
-	bla
-Bola de Cristal
-	Bruto
-	Supersticioso
-Soco inglês
-	Bruto
-	Honroso
-Bastão
-	Bruto
+## Pista
+	Motivo
+	Indício de presença
+	Evidencia Material
+	Registro de Posse
+	Historico criminal
+	Mover o corpo
+	Ferimentos pós-morte
+	Hora da morte
