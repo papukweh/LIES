@@ -1,12 +1,14 @@
 cartas de lugar sao chatas > comodos
 	como distribuir lugares?
-cartas de arma sao repetititvas > trocar por traits, que sao cartas
+cartas de arma sao repetititvas > trocar por traits, que sao cartas que jogamos nas coisas
 pessoas serem as pessoas que trabalham na casa
 evidencia > carta que poe traits nas cousas
 turnos são estranhos >
 final do jogo é estranho >
 quem morre é o dono MAFIOSO da mansao e cada pessoa fala uma coisa sobre ele
-regra da carta que nao aponta pra ninguem
+regra da carta que nao aponta pra ninguem ela faz alguma outra coisa
+passagem secreta
+Ideia do matheus > lorota ganha bonus
 
 ## Pessoas
 
@@ -29,8 +31,8 @@ Preciso
 Galante
 Compulsivo
 Jogador
-Supersticioso
-Ganancioso
+Supersticioso A
+Ganancioso A
 Honroso
 Boemio
 Petulante
