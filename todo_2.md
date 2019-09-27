@@ -6,9 +6,10 @@ evidencia > carta que poe traits nas cousas
 turnos são estranhos >
 final do jogo é estranho >
 quem morre é o dono MAFIOSO da mansao e cada pessoa fala uma coisa sobre ele
-regra da carta que nao aponta pra ninguem ela faz alguma outra coisa
+regra da carta que nao aponta pra ninguem faz alguma outra coisa
 passagem secreta
 Ideia do matheus > lorota ganha bonus
+corpo aparecer no meio (no dado do lugar 2)
 
 ## Pessoas
 	Detetive?
@@ -23,17 +24,15 @@ Ideia do matheus > lorota ganha bonus
 	Investidor
 
 ## Traits
-	Bruto - sangue
+	Bruto - sangue, luta
 	Sutil - contramedidas, furtividade
     Preciso - tiros, lançamentos, precisão
-	Galante - perfume, tecidos chiques, lenço
+	Galante - perfume, tecidos chiques, lenço umidecido
 	Desastrado - barulhos, coisas quebradas
 	Sagaz - minucia, detalhes, medicina
 	Supersticioso - runas, desenhos, bonecos
 	Ganancioso - aneis, dinheiro, coisas caras 
-	Honroso - luta
 	Hedonista - sexo, drogas, comida
-	Petulante - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ## Comodos
 	Hall
@@ -52,13 +51,13 @@ Ideia do matheus > lorota ganha bonus
 	Dardo
 	Faca
 	Canivete
-	Adaga cerimonial
+	-Adaga cerimonial
 	Veneno
 	Analgésico
 	Candelabro
 	Bola de Cristal
 	Soco inglês
-	Bastão
+	-Bastão
 
 ## Pista
 	Motivo
