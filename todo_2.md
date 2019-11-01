@@ -66,6 +66,7 @@ no final do turno do jogador, ele compra uma pista e **I N V E S T I G A**, vulg
 	* gratuito
 	> Dividir em mais cartas
 	> Deixar mais raro
+	> Mantido mais raro
 
 	Indício de presença
 	* nome esquisito
@@ -75,17 +76,21 @@ no final do turno do jogador, ele compra uma pista e **I N V E S T I G A**, vulg
 	Evidencia Material
 	* Ninguem sabe o que faz
 	* generico demais
+	> Morto (ooF)
 
 	Registro de Posse
 	> Manter
+	> Mantido
 
 	Historico criminal
 	> Manter
+	> Virou Mania
 
 	Mover o corpo
 	* Trocar para lugare sque o cara passou
 	* podia ter mais
 	> Perseguição X Mover Corpo
+	> Virou deslocamento
 
 	Ferimentos pós-morte
 	* Meh?
