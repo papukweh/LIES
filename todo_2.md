@@ -25,15 +25,15 @@ no final do turno do jogador, ele compra uma pista e **I N V E S T I G A**, vulg
 	Investidor
 
 ## Peculiaridades
-	Bruto - sangue, luta
-	Sutil - contramedidas, furtividade
-    Preciso - tiros, lançamentos, precisão
-	Galante - perfume, tecidos chiques, lenço umidecido
-	Desastrado - barulhos, coisas quebradas
-	Sagaz - minucia, detalhes, medicina
-	Supersticioso - runas, desenhos, bonecos
-	Ganancioso - aneis, dinheiro, coisas caras 
-	Hedonista - sexo, drogas, comida
+	Bruto - sangue, luta - fight
+	Sutil - contramedidas, furtividade - dark
+    Preciso - tiros, lançamentos, precisão - water
+	Galante - perfume, tecidos chiques, lenço umidecido - fairy
+	Desastrado - barulhos, coisas quebradas - fire
+	Sagaz - minucia, detalhes, medicina - electric
+	Supersticioso - runas, desenhos, bonecos - psychic
+	Ganancioso - aneis, dinheiro, coisas caras - steel
+	Hedonista - sexo, drogas, comida - grass
 
 ## Comodos
 	Hall
@@ -52,13 +52,11 @@ no final do turno do jogador, ele compra uma pista e **I N V E S T I G A**, vulg
 	Dardo
 	Faca
 	Canivete
-	-
 	Veneno
 	Analgésico
 	Candelabro
 	Bola de Cristal
 	Soco inglês
-	-
 
 ## Pista
 	Motivo
